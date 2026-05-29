@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Box Builder - Toy Balance Puzzle Game</title>
+  <meta name="description" content="Box Builder is a cheerful offline toy-room puzzle game where players catch the right blocks to complete playful patterns.">
+  <style>
+    :root {
+      --cream: #fff7e9;
+      --peach: #ffd7ad;
+      --caramel: #b77843;
+      --brown: #624936;
+      --blue: #5aa9bf;
+      --orange: #f29a49;
+      --green: #8ab768;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--brown);
+      background: linear-gradient(180deg, var(--cream), #ffe4c7);
+    }
+    main { overflow: hidden; }
+    .hero {
+      min-height: 92vh;
+      display: grid;
+      align-items: center;
+      padding: 56px 20px;
+      background:
+        linear-gradient(90deg, rgba(255,247,233,.95), rgba(255,247,233,.58)),
+        url("resource/appstore-screenshots/iphone-6-9-1320x2868/01.png") center / cover;
+    }
+    .wrap {
+      width: min(1080px, 100%);
+      margin: 0 auto;
+    }
+    .hero-content { max-width: 580px; }
+    h1 {
+      margin: 0 0 14px;
+      font-size: clamp(46px, 8vw, 82px);
+      line-height: .95;
+      letter-spacing: 0;
+      color: var(--brown);
+    }
+    .tagline {
+      margin: 0 0 28px;
+      font-size: clamp(20px, 3vw, 30px);
+      line-height: 1.25;
+      font-weight: 800;
+      color: #7f5a3d;
+    }
+    .summary {
+      max-width: 520px;
+      margin: 0;
+      font-size: 18px;
+      line-height: 1.6;
+      color: #6e5847;
+    }
+    .badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 30px;
+    }
+    .badge {
+      padding: 10px 14px;
+      border: 2px solid rgba(98,73,54,.16);
+      border-radius: 8px;
+      background: rgba(255,255,255,.68);
+      font-weight: 800;
+    }
+    section {
+      padding: 64px 20px;
+    }
+    h2 {
+      margin: 0 0 22px;
+      font-size: clamp(30px, 5vw, 48px);
+      line-height: 1.05;
+      color: var(--brown);
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+    .feature {
+      padding: 22px;
+      border-radius: 8px;
+      background: rgba(255,255,255,.68);
+      border: 2px solid rgba(98,73,54,.12);
+    }
+    .feature h3 {
+      margin: 0 0 8px;
+      font-size: 21px;
+    }
+    .feature p {
+      margin: 0;
+      line-height: 1.55;
+      color: #705846;
+    }
+    .screens {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      align-items: start;
+    }
+    .screens img {
+      width: 100%;
+      border-radius: 8px;
+      border: 3px solid rgba(98,73,54,.16);
+      box-shadow: 0 12px 30px rgba(98,73,54,.16);
+      display: block;
+    }
+    .cta {
+      background: #fff2df;
+      border-top: 2px solid rgba(98,73,54,.10);
+    }
+    .cta p {
+      max-width: 720px;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    footer {
+      padding: 28px 20px;
+      background: var(--brown);
+      color: var(--cream);
+    }
+    footer a {
+      color: var(--peach);
+      font-weight: 800;
+    }
+    @media (max-width: 820px) {
+      .features, .screens { grid-template-columns: 1fr 1fr; }
+      .hero { min-height: 82vh; }
+    }
+    @media (max-width: 560px) {
+      .features, .screens { grid-template-columns: 1fr; }
+      .screens img { max-width: 300px; margin: 0 auto; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <div class="wrap hero-content">
+        <h1>Box Builder</h1>
+        <p class="tagline">Catch the right toy blocks. Build the pattern. Keep the box balanced.</p>
+        <p class="summary">Box Builder is a cozy offline puzzle game set in a bright toy room. Move the cardboard box across a wooden plank, collect the exact blocks shown in each pattern, and avoid the wrong pieces.</p>
+        <div class="badges" aria-label="Game highlights">
+          <span class="badge">Offline Play</span>
+          <span class="badge">32 Levels</span>
+          <span class="badge">Star Ratings</span>
+          <span class="badge">Toy Room Style</span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <h2>Build Colorful Toy Patterns</h2>
+        <div class="features">
+          <article class="feature">
+            <h3>Pattern Goals</h3>
+            <p>Each level shows a playful shape made from blocks, such as houses, flowers, castles, rockets, crowns, and toy vehicles.</p>
+          </article>
+          <article class="feature">
+            <h3>Balance Challenge</h3>
+            <p>Move the box left and right on a wooden plank. Catch the correct blocks without letting the box fall.</p>
+          </article>
+          <article class="feature">
+            <h3>Progression</h3>
+            <p>Unlock 32 handcrafted levels with increasing block counts, more colors, extra shapes, faster drops, and trickier distractors.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <h2>Screenshots</h2>
+        <div class="screens">
+          <img src="resource/appstore-screenshots/iphone-6-9-1320x2868/01.png" alt="Box Builder main menu">
+          <img src="resource/appstore-screenshots/iphone-6-9-1320x2868/02.png" alt="Box Builder level selection">
+          <img src="resource/appstore-screenshots/iphone-6-9-1320x2868/03.png" alt="Box Builder gameplay">
+          <img src="resource/appstore-screenshots/iphone-6-9-1320x2868/04.png" alt="Box Builder level result">
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="wrap">
+        <h2>Designed for Quick, Cheerful Play</h2>
+        <p>Box Builder is made for short sessions, gentle challenge, and satisfying pattern completion. It works as a single-player game and stores progress locally on the device.</p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap">
+      <span>Box Builder</span> · <a href="privacy.html">Privacy Policy</a>
+    </div>
+  </footer>
+</body>
+</html>
